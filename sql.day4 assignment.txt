@@ -1,0 +1,20 @@
+CREATE TABLE students (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT,
+  age INTEGER,
+  gender TEXT
+);
+
+INSERT INTO students (name, age, gender) VALUES ('John', 20, 'Male');
+INSERT INTO students (name, age, gender) VALUES ('Mary', 22, 'Female');
+INSERT INTO students (name, age, gender) VALUES ('Peter', 19, 'Male');
+
+
+SELECT * FROM students;
+
+UPDATE students SET name = 'Janet' WHERE id = 2;
+
+DELETE FROM students WHERE id = 3;
+
+
+SELECT * FROM students;
